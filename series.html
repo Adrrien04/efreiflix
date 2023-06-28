@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Entête de la page, inclut le titre et les liens vers les fichiers CSS -->
+  <meta charset="UTF-8">
+  <title>Infos Séries</title>
+  <link rel="stylesheet" href="style.css"> <!-- Import du fichier CSS pour la page -->
+  <link rel="icon" href="img/favicon.png"> <!-- Import de l'icône de la page web -->
+
+</head>
+<body>
+<!-- Navigation de la page -->
+<nav class="navbar">
+  <a href="index.html"> <img src="img/logo.png" class="logo"></a>
+  <i class="fa-solid fa-bars"></i>
+  <div class="liens">
+    <ul>
+      <li><a href="index.html">Catalogue</a></li>
+      <li><a href="connexion.html">Se Connecter</a></li>
+      <li><a href="series.html"  style="color: #F00303;">Infos Séries </a></li>
+      <li><a href="films.html">Infos Films</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- Contenu de la page -->
+<main>
+  <h1>I&nbsp N&nbsp F&nbsp O&nbsp R&nbsp M&nbsp A&nbsp T&nbsp I&nbsp O&nbsp N&nbsp S&nbsp &nbsp&nbsp S &nbspÉ  &nbspR &nbspI &nbspE &nbspS</h1>
+  <div class="carou">
+    <img src="img/blackmirror.jpg" class="carouim" onclick="showSerieDetails('Black Mirror')">
+    <img src="img/gooddoctor.jpg" class="carouim" onclick="showSerieDetails('Good Doctor')">
+    <img src="img/13reasonswhy.jpg" class="carouim" onclick="showSerieDetails('13 Reasons Why')">
+    <img src="img/friends.jpg" class="carouim" onclick="showSerieDetails('Friends')">
+    <img src="img/the-big-bang-theory-personnage.webp" class="carouim" onclick="showSerieDetails('The Big Bang Theory')">
+    <img src="img/got.jpg" class="carouim" onclick="showSerieDetails('Game of Thrones')">
+  </div>
+  <div id="details">
+<h3>I N F O R M A T I O N S &nbsp S U R &nbsp L A &nbsp S É R I E &nbsp S E L E C T I O N N É E</h3>
+  </div>
+  <script>
+    function showSerieDetails(serie) {
+      fetch('series.json')
+              .then(response => response.json())
+              .then(data => {
+                const serieData = data.serieData.find(obj => obj.Nom === serie);
+                if (serieData) {
+                  const detailsDiv = document.getElementById('details');
+                  detailsDiv.innerHTML = '<h3>I N F O R M A T I O N S &nbsp S U R &nbsp L A &nbsp S É R I E &nbsp S E L E C T I O N N É E </h3>' +
+                          '<h2>' + serieData.Nom + '</h2>' +
+                          '<p>Année de sortie : ' + serieData['Année de Sortie'] + '</p>' +
+                          '<p>Nombre épisodes : ' + serieData['Nombre épisodes'] + '</p>' +
+                          '<p>Réalisateur : ' + serieData['Réalisateur'] + '</p>' +
+                          '<p>Description : ' + serieData['Description'] + '</p>' ;
+                } else {
+                  alert('Série non trouvée');
+                }
+              })
+    }
+  </script>
+  <!--
+  <script>
+    function showSerieDetails(serie) {
+      fetch('series.json')
+              .then(response => response.json())
+              .then(data => {
+                const serieData = data.serieData.find(obj => obj.Nom === serie);
+                //if (serieData) {
+                //  const affinfo = `<p>Nom de la série: ${serieData.Nom}</p>
+                //                      <p>Année de sortie: ${serieData['Année de Sortie']}</p>
+                //                        <p>Réalisateur: ${serieData.Réalisateur}</p>
+                //                        <p>Nombre d'épisodes: ${serieData['Nombre épisodes']}</p>
+                 //                       <p>Histoire : ${serieData['Description']}</p>`;
+                //
+                //  var bloc = document.querySelector(".info > .info");
+                //  bloc.innerHTML = affinfo;
+                //  document.querySelector();
+               if (serieData) {
+                  const popupContent = `<p>Nom de la série: ${serieData.Nom}</p>
+                                        <p>Année de sortie: ${serieData['Année de Sortie']}</p>
+                                        <p>Réalisateur: ${serieData.Réalisateur}</p>
+                                        <p>Nombre d'épisodes: ${serieData['Nombre épisodes']}</p>
+                                        <p>Histoire : ${serieData['Description']}</p>`;
+
+                  const popup = window.document;
+                  popup.write(popupContent);
+                  popup.close();
+                } else {
+                  alert('Série non trouvée');
+                  //if (serieData) {
+                  //alert('Nom de la série: ' + serieData.Nom + ', Année de sortie: ' + serieData['Année de Sortie']);
+                  //} else {
+                  //alert('Série non trouvée');
+                }
+              })
+    }
+  </script>
+  !-->
+
+  <footer>
+    <div class="footer">
+      <br>
+      <a href="index.html" ><img src="img/logo.png" width="160px"></a>
+      <ul>
+        <li><a href="index.html">Catalogue</a></li>
+        <li><a href="connexion.html">Se Connecter</a></li>
+        <li><a href="series.html">Infos Séries</a></li>
+        <li><a href="films.html">Infos Films</a></li>
+      </ul>
+      <p>CHANDRAKUMAR Adrrien</p>
+      <a href="https://www.linkedin.com/in/adrrien-chandrakumar/" target="_blank"><img src="img/vecteezy_linkedin-logo-png-linkedin-icon-transparent-png_18930480_161.png" width="50px" "></a>
+    </div>
+  </footer>
+</main>
+
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulaire de mise à jour JSON</title>
+</head>
+<body>
+<h1>Formulaire de mise à jour JSON</h1>
+<form id="update-form">
+  <label for="nom-input">Nom :</label>
+  <input type="text" id="nom-input" name="nom"><br><br>
+  <label for="annee-input">Année de sortie :</label>
+  <input type="text" id="annee-input" name="annee"><br><br>
+  <label for="realisateur-input">Réalisateur :</label>
+  <input type="text" id="realisateur-input" name="realisateur"><br><br>
+  <label for="episodes-input">Nombre d'épisodes :</label>
+  <input type="text" id="episodes-input" name="episodes"><br><br>
+  <label for="description-input">Description :</label><br>
+  <textarea id="description-input" name="description"></textarea><br><br>
+  <input type="submit" value="Mettre à jour">
+</form>
+<script>
+  const form = document.getElementById('update-form');
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+
+    const response = await fetch('/update-json', {
+      method: 'POST',
+      body: formData
+    });
+
+    if (response.ok) {
+      alert('Mise à jour effectuée avec succès !');
+    } else {
+      alert('Une erreur est survenue lors de la mise à jour.');
+    }
+  });
+</script>
+</body>
+</html>

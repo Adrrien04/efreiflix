@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Entête de la page, inclut le titre et les liens vers les fichiers CSS -->
+  <meta charset="UTF-8">
+  <title>Inscription</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="carousel.css">
+  <link rel="icon" href="img/favicon.png">
+</head>
+
+<body>
+<!-- Navigation de la page -->
+<nav class="navbar">
+  <a href="index.html"> <img src="img/logo.png" class="logo"></a>
+  <i class="fa-solid fa-bars"></i>
+  <div class="liens">
+    <ul>
+      <li><a href="index.html">Catalogue</a></li>
+      <li><a href="connexion.html">Se Connecter</a></li>
+      <li><a href="series.html">Infos Séries</a></li>
+      <li><a href="films.html">Infos Films</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Contenu principal de la page -->
+<main>
+  <h1>I&nbsp N &nbspS &nbspC &nbspR &nbspI &nbspV &nbspE &nbspZ &nbsp- &nbspV &nbspO &nbspU &nbspS</h1>
+
+  <!-- Formulaire d'inscription -->
+  <form id="forminscr">
+    <div>
+      <label for="name">Nom d'Utilisateur :</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <br>
+    <div>
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <br>
+    <div>
+      <label for="password">Mot de Passe :</label>
+      <input id="password" name="password" required>
+    </div>
+    <br>
+    <button type="submit">S'Inscrire</button>
+  </form>
+</main>
+
+<!-- Script JavaScript pour traiter le formulaire d'inscription -->
+<script>
+  const form = document.getElementById('forminscr');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // Empêche le formulaire de se soumettre normalement
+
+    const formData = new FormData(this);
+
+    const user = {
+      name: formData.get('name'), // Récupère le nom d'utilisateur
+      email: formData.get('email'), // Récupère l'adresse e-mail
+      password: formData.get('password') // Récupère le mot de passe
+    };
+
+    // Envoie les données utilisateur au serveur en utilisant la méthode POST
+    fetch('data.json', {
+      method: 'POST',
+      body: JSON.stringify(user),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+            .then(response => response.json()) // Convertit la réponse en JSON
+            .then(data => {
+              console.log(data);
+              alert('Inscription réussie!'); // Affiche une alerte de succès
+            })
+            .catch(error => {
+              console.error(error);
+              alert('Une erreur est survenue!'); // Affiche une alerte d'erreur
+            });
+  });
+</script>
+</body>
+</html>

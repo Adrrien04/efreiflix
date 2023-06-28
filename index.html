@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Entête de la page, inclut le titre et les liens vers les fichiers CSS -->
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css"> <!-- Import du fichier CSS pour la page -->
+    <link rel="icon" href="img/favicon.png"> <!-- Import de l'icône de la page web -->
+</head>
+<body>
+<!-- Navigation de la page -->
+<nav class="navbar">
+    <a href="index.html"> <img src="img/logo.png" class="logo"></a>
+    <i class="fa-solid fa-bars"></i>
+    <div class="liens">
+        <ul>
+            <li><a href="index.html" style="color: #F00303;">Catalogue</a></li>
+            <li><a href="connexion.html">Se Connecter</a></li>
+            <li><a href="series.html">Infos Séries</a></li>
+            <li><a href="films.html">Infos Films</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- Contenu de la page -->
+<main>
+    <h1> C &nbspA &nbspT &nbspA &nbspL &nbspO &nbspG &nbspU &nbspE</h1>
+    <div class="carou">
+        <img src="img/blackmirror.jpg" class="carouim" onclick="playVideo('https://www.youtube-nocookie.com/embed/oxOc9za2WYQ')">
+        <img src="img/gooddoctor.jpg" class="carouim" onclick="playVideo('https://www.youtube-nocookie.com/embed/lnY9FWUTY84')">
+        <img src="img/13reasonswhy.jpg" class="carouim" onclick="playVideo('https://www.youtube-nocookie.com/embed/LVVMvRpmu0s')">
+        <img src="img/friends.jpg" class="carouim" onclick="playVideo('https://www.youtube-nocookie.com/embed/HEGMNlNX_RU')">
+        <img src="img/the-big-bang-theory-personnage.webp" class="carouim" onclick="playVideo('https://www.youtube-nocookie.com/embed/MfKtj5DnBz8')">
+        <img src="img/got.jpg" class="carouim" onclick="playVideo('https://www.youtube-nocookie.com/embed/Ng1W_qu5aJM')">
+        <img src="img/creed.jpg" class="carouim" onclick="playVideo('https://www.youtube-nocookie.com/embed/SdFuAA5l7Ms')">
+        <img src="img/331_JOHNWICK2XXW0123020_BAN1_2424_NEWTV.jpg" class="carouim" onclick="playVideo('https://www.youtube-nocookie.com/embed/d0u1o8vdxE8')">
+        <img src="img/fatherhood-h-6223481624796781.png" class="carouim" onclick="playVideo('https://www.youtube-nocookie.com/embed/6sk4etu_6G8')">
+        <img src="img/yourname.jpg" class="carouim" onclick="playVideo('https://www.youtube-nocookie.com/embed/AROOK45LXXg')">
+        <img src="img/1200x680_joker_2.jpg" class="carouim" onclick="playVideo('https://www.youtube-nocookie.com/embed/X6hRhGklEvA')">
+        <img src="img/CP_header.jpg" class="carouim" onclick="playVideo('https://www.youtube-nocookie.com/embed/L5MP_N4_Tb8')">
+    </div>
+    <script>
+        // Code permettant d'afficher une alerte lors de la visite de la page principale.
+        window.onload = function() {
+            alert("Bienvenue sur EfreiFlix ! \nUn service de streaming tout à fait nouveau et repensé. Sur cette page principale vous trouverez le catalogue complet, en cliquant sur les vignettes vous aurez accès a la vidéo. \nEn allant sur les pages Infos Séries et Infos Films, en cliquant sur les vignettes vous aurez les différentes informations en bas de la page conçernant la série ou le film que vus aurez selectionné.\nBon visionage ! \nCHANDRAKUMAR Adrrien");
+        }
+
+        // Code permettant d'afficher une video
+        function playVideo(videoUrl) {
+            var windowFeatures = "width=600,height=400";
+            window.open(videoUrl, "videoWindow", windowFeatures);
+        }
+    </script>
+
+    <footer>
+        <div class="footer">
+            <br>
+            <a href="index.html" ><img src="img/logo.png" width="160px"></a>
+            <ul>
+                <li><a href="index.html">Catalogue</a></li>
+                <li><a href="connexion.html">Se Connecter</a></li>
+                <li><a href="series.html">Infos Séries</a></li>
+                <li><a href="films.html">Infos Films</a></li>
+            </ul>
+            <p>CHANDRAKUMAR Adrrien</p>
+            <a href="https://www.linkedin.com/in/adrrien-chandrakumar/" target="_blank"><img src="img/vecteezy_linkedin-logo-png-linkedin-icon-transparent-png_18930480_161.png" width="50px" "></a>
+        </div>
+    </footer>
+
+</main>
+
+
+</body>
+</html>
+
+

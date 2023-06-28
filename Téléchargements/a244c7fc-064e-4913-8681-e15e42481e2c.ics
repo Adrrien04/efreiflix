@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Calendly//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTAMP:20230112T164056Z
+UID:calendly-622040385
+DTSTART:20230113T120000Z
+DTEND:20230113T130000Z
+CLASS:PRIVATE
+DESCRIPTION:Nom de l'événement: Efrei - Recherche de stage\nDescription d
+ e l'événement: Bonjour à tous\,Dans le cadre de l'accompagnement à la 
+ recherche de stage mis en place par l'EFREI\, nous devons convenir IMPERAT
+ IVEMENT dans un premier temps d’un atelier COLLECTIF nous permettant d
+ ’optimiser ce process et de faciliter vos démarches et méthodologies 
+ !N'hésitez pas à me signaler si vous avez d’ors et déjà trouvé vote
+  STAGE afin que je renseigne notre base interne ECOLE. Vous pouvez dès
+  à présent positionner un atelier (individuel ou collectif) dans le 
+ calendrier.DANS L'ATTENTE DE VOTRE RETOUR\,Vous en souhaitant bonne récep
+ tion.Merci d’avance.Bon après-midi.A très vite sur Teams ! Cordialem
+ ent\,Nathalie DREANnathalie.drean@alypia.comhttps://www.linkedin.com/in/na
+ thalie-drean/06.26.25.58.01\nDate et heure: 13:00 - 14:00 (Heure d'Europe 
+ centrale) le vendredi\, 13 janvier 2023\nLieu: Ceci est une conférence en
+  ligne Microsoft Teams.\n\nVous pouvez rejoindre cette réunion à partir 
+ de votre ordinateur\, tablette ou smartphone.\nhttps://calendly.com/events
+ /d77a90a6-b783-4b18-aefd-6beb72fad892/microsoft_teams\n\nMerci de renseign
+ er votre numéro de téléphone afin que nous puissions vous joindre :): +
+ 33 6 67 18 64 91\n\nSouhaitez-vous apporter des modifications à cet évé
+ nement?\nAnnuler: https://calendly.com/cancellations/a244c7fc-064e-4913-86
+ 81-e15e42481e2c\nReplanifier: https://calendly.com/reschedulings/a244c7fc-
+ 064e-4913-8681-e15e42481e2c\n
+LOCATION:https://calendly.com/events/d77a90a6-b783-4b18-aefd-6beb72fad892/m
+ icrosoft_teams
+SUMMARY:Efrei - Recherche de stage avec Nathalie DREAN
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

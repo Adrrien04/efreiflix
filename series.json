@@ -1,0 +1,46 @@
+{
+  "serieData": [
+    {
+      "Nom": "Black Mirror",
+      "Année de Sortie": "2011",
+      "Réalisateur": "Charlie Brooker",
+      "Nombre épisodes": "22",
+      "Description": "Black Mirror est une série anthologique anglaise. Les deux premières saison ont été diffusée sur Channel 4, puis sur Efreiflix à partir de la saison 3. La série traite de notre rapport aux médias, à l’image dans des récits d’anticipation à la tonalité dystopique. Un ton noir qui pousse à réfléchir sur notre présent et notre potentiel futur! Car si Black Mirror pousse parfois le curseur un peu loin, la démonstration est la plupart du temps réaliste et convaincante. Comme toute série anthologique, la qualité des épisode reste inégale, mais la série reste globalement de très bonne qualité! Un « must-see » comme dirait nos amis et voisins anglais.."
+    },
+    {
+      "Nom": "Game of Thrones",
+      "Année de Sortie": "2011",
+      "Réalisateur": "Mark Huffam, Frank Doelger",
+      "Nombre épisodes": "73",
+      "Description": "Game Of thrones est adaptée des romans de George R. R. Martin. On y suit les intrigues et luttes de pouvoir pour conquérir le Trône de Fer du Royaume des Sept Couronnes dans une ambiance de Fantasy. Complots, coups bas et dragons seront de la partie! Et si la saga comporte de nombreux personnages, beaucoup vont périr au fil des saisons! Ne vous attachez donc pas trop, vous pourriez mal vivre certains décès! HBO a mis énormément de moyens sur la série et ça se voit! L’adaptation est de grande qualité, bien soutenue par la musique de Ramin Djawadi, notamment un magnifique générique d’ouverture qui restera dans les mémoires des sériephiles à jamais! Un cast majoritairement composé d’inconnus (qui sont depuis devenus des stars) mais qui fait remarquablement le boulot vient finaliser le tout."
+    },
+    {
+      "Nom": "Good Doctor",
+      "Année de Sortie": "2017",
+      "Réalisateur": "David Shore",
+      "Nombre épisodes": "107",
+      "Description": "Shaun Murphy, un jeune chirurgien autiste ayant le syndrome du savant, quitte une vie de campagne paisible pour entrer dans une unité chirurgical prestigieuse. Livré à lui-même et éprouvant une grande difficulté à communiquer avec les personnes qui l'entourent, Shaun utilise son incroyable don au service de ses patients et va devoir prouver sa valeur auprès de ces collègues et certains patients, même les plus sceptiques..."
+    },
+    {
+      "Nom": "13 Reasons Why",
+      "Année de Sortie": "2017",
+      "Réalisateur": "Brian Yorkey",
+      "Nombre épisodes": "49",
+      "Description": "Basé sur le best-seller de Jay Asher, 13 Reasons Why suit l'adolescent Clay Jensen alors qu'il rentre de l'école pour trouver une mystérieuse boîte portant son nom sur son porche. À l'intérieur, il découvre des cassettes enregistrées par Hannah Baker - sa camarade de classe et son béguin - qui s'est tragiquement suicidée deux semaines plus tôt. Sur bande, Hannah explique qu'il y a treize raisons pour lesquelles elle a décidé de mettre fin à ses jours. Clay en fera-t-il partie ? S'il écoute, il découvrira comment il a fait la liste. À travers les doubles récits d'Hannah et Clay, 13 Reasons Why tisse une histoire complexe et déchirante de la vie d'adolescent qui affectera profondément les téléspectateurs."
+    },
+    {
+      "Nom": "Friends",
+      "Année de Sortie": "1994",
+      "Réalisateur": "Marta Kauffman, David Crane",
+      "Nombre épisodes": "236",
+      "Description": "L'histoire raconte les péripéties de trois jeunes femmes et trois jeunes hommes new-yorkais liés par une profonde amitié. Entre amour, travail, famille, ils partagent leurs bonheurs et leurs soucis au Central Perk, leur café favori."
+    },
+    {
+      "Nom": "The Big Bang Theory",
+      "Année de Sortie": "2007",
+      "Réalisateur": "Chuck Lorre, Bill Prady",
+      "Nombre épisodes": "279",
+      "Description": "La série suit la vie fictive de deux scientifiques du California Institute of Technology (Caltech) à Pasadena en Californie : le physicien expérimental Leonard Hofstadter et le physicien théoricien Sheldon Cooper. Ils vivent en colocation dans cette ville de la banlieue de Los Angeles, au 2311 North Los Robles Avenue. Leur appartement fait face à celui de la jolie Penny, serveuse au Cheesecake Factory, et dont le rêve est de devenir actrice. L'effet comique de la série joue beaucoup sur le contraste entre l'intelligence et la « geekitude » de Leonard et Sheldon et le bon sens et l'intelligence sociale de Penny. Les deux hommes sont amis avec Howard Wolowitz, un ingénieur physicien spécialisé en aérospatiale, d'origine juive et dragueur compulsif, et Rajesh Koothrappali, astrophysicien natif de New Delhi atteint d'une peur pathologique de parler en présence de femmes."
+    }
+  ]
+}
